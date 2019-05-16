@@ -1,0 +1,15 @@
+.rotate {
+  -webkit-animation: rotation 10s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg) scale(10.5) translate(-50px);   
+  }
+  
+}

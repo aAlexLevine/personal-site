@@ -1,0 +1,222 @@
+.project-sideBar {
+  display: flex;
+  align-items: center;
+  background:#f96855;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+
+}
+
+.project-icon-container{
+  margin: 15px 10px 15px 10px;
+  cursor: pointer;
+}
+
+.project-details-links {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-icon-caption {
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 8px;
+}
+
+.image-container {
+  max-height: 453px;
+  overflow: hidden;
+  transition: all 2.75s ease;
+  /* min-height: 30vh */
+}
+
+.image {
+  overflow: hidden;
+  max-height: 453px;
+  /* transition: max-height 3.75s ease; */
+}
+
+
+.leftArrowContainer {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: auto;
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.leftArrow {
+  color: #f96855;
+  font-size: 20px;
+  opacity: .5;
+}
+
+.leftArrowContainer:hover{
+  background: #9494941a;
+}
+.leftArrow:hover {
+  opacity: 1;
+}
+
+.rightArrowContainer {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: auto;
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightArrow {
+  color: #f96855;
+  font-size: 20px;
+  opacity: .5;
+}
+
+.rightArrow:hover {
+  opacity: 1;
+}
+
+.rightArrowContainer:hover{
+  background: #9494941a;
+}
+
+.thumbnail-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail {
+  height: 7px;
+  width: 7px;
+  background:grey;
+  margin: 15px 10px 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+.thumbnail-selected {
+  background: #f96855;
+}
+
+
+.project-description-container {
+  margin: 0px 40px 15px 0px;
+  position: relative;
+}
+
+.project-description-title {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px
+}
+
+.project-description-body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  padding: 15px;
+  text-align: justify;
+}
+
+.project-description-title:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  /* margin: 0 auto; This will center the border. */
+  width: 85px; /* Change this to whatever width you want. */
+  padding-top: 0px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid #f96855; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.orange-background {
+  background: #f96855;
+}
+.orange-color {
+  color: #f96855;
+}
+.orange-underline:after{
+  border-bottom-color: #f96855
+}
+
+.blue-background {
+  background: #007bff; 
+}
+.blue-color {
+  color: #007bff;
+}
+.blue-underline:after {
+  border-bottom-color: #007bff;
+}
+
+.purple-background {
+  background: #6f42c1;
+}
+.purple-color {
+  color: #6f42c1;
+}
+.purple-underline:after {
+  border-bottom-color: #6f42c1
+}
+
+.pink-background {
+  background: #e83e8c
+}
+.pink-color {
+  color: #e83e8c;
+}
+.pink-underline:after {
+  border-bottom-color: #e83e8c
+}
+
+.carousel-enter {
+  opacity: 0.05;
+}
+
+.carousel-enter.carousel-enter-active {
+  opacity: 1;
+  /* transform: translate(30px); */
+  transition: opacity 200ms linear;
+  overflow-y: hidden;
+}
+
+.carousel-leave {
+  /* transition: translate(-30px); */
+  /* display: none; */
+  position: fixed;
+  overflow-y: hidden;
+  /* transform: translate(-30px); */
+  opacity: .6;
+
+}
+
+.carousel-leave.carousel-leave-active {
+  opacity: 0.01;
+  transform: translate(30px);
+  transition: transform 300ms linear;
+}
+
+

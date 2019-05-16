@@ -1,0 +1,40 @@
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.email-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.email-text:hover {
+  text-decoration: underline;
+}
+
+.clipboard {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.clip-caption {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.email-note-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.email-note {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
