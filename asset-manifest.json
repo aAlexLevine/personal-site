@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/aAlexLevine/Lift-Log-Dash/static/css/main.6530ce93.chunk.css",
-    "main.js": "/aAlexLevine/Lift-Log-Dash/static/js/main.251d05d9.chunk.js",
-    "main.js.map": "/aAlexLevine/Lift-Log-Dash/static/js/main.251d05d9.chunk.js.map",
-    "runtime~main.js": "/aAlexLevine/Lift-Log-Dash/static/js/runtime~main.d1bdf49c.js",
-    "runtime~main.js.map": "/aAlexLevine/Lift-Log-Dash/static/js/runtime~main.d1bdf49c.js.map",
-    "static/css/2.7abef457.chunk.css": "/aAlexLevine/Lift-Log-Dash/static/css/2.7abef457.chunk.css",
-    "static/js/2.bf1bdc63.chunk.js": "/aAlexLevine/Lift-Log-Dash/static/js/2.bf1bdc63.chunk.js",
-    "static/js/2.bf1bdc63.chunk.js.map": "/aAlexLevine/Lift-Log-Dash/static/js/2.bf1bdc63.chunk.js.map",
-    "index.html": "/aAlexLevine/Lift-Log-Dash/index.html",
-    "precache-manifest.e59d9a09a85ed7539be400174a7459e6.js": "/aAlexLevine/Lift-Log-Dash/precache-manifest.e59d9a09a85ed7539be400174a7459e6.js",
-    "service-worker.js": "/aAlexLevine/Lift-Log-Dash/service-worker.js",
-    "static/css/2.7abef457.chunk.css.map": "/aAlexLevine/Lift-Log-Dash/static/css/2.7abef457.chunk.css.map",
-    "static/css/main.6530ce93.chunk.css.map": "/aAlexLevine/Lift-Log-Dash/static/css/main.6530ce93.chunk.css.map"
+    "main.css": "/aAlexLevine/personal-site/static/css/main.6530ce93.chunk.css",
+    "main.js": "/aAlexLevine/personal-site/static/js/main.8c659a37.chunk.js",
+    "main.js.map": "/aAlexLevine/personal-site/static/js/main.8c659a37.chunk.js.map",
+    "runtime~main.js": "/aAlexLevine/personal-site/static/js/runtime~main.1f108718.js",
+    "runtime~main.js.map": "/aAlexLevine/personal-site/static/js/runtime~main.1f108718.js.map",
+    "static/css/2.7abef457.chunk.css": "/aAlexLevine/personal-site/static/css/2.7abef457.chunk.css",
+    "static/js/2.bf1bdc63.chunk.js": "/aAlexLevine/personal-site/static/js/2.bf1bdc63.chunk.js",
+    "static/js/2.bf1bdc63.chunk.js.map": "/aAlexLevine/personal-site/static/js/2.bf1bdc63.chunk.js.map",
+    "index.html": "/aAlexLevine/personal-site/index.html",
+    "precache-manifest.475ef9bf690d0e32a896269b2784a676.js": "/aAlexLevine/personal-site/precache-manifest.475ef9bf690d0e32a896269b2784a676.js",
+    "service-worker.js": "/aAlexLevine/personal-site/service-worker.js",
+    "static/css/2.7abef457.chunk.css.map": "/aAlexLevine/personal-site/static/css/2.7abef457.chunk.css.map",
+    "static/css/main.6530ce93.chunk.css.map": "/aAlexLevine/personal-site/static/css/main.6530ce93.chunk.css.map"
   }
 }
