@@ -1,3 +1,7 @@
+.media-container {
+  
+}
+
 .project-sideBar {
   display: flex;
   align-items: center;
@@ -30,7 +34,7 @@
   max-height: 453px;
   overflow: hidden;
   transition: all 2.75s ease;
-  /* min-height: 30vh */
+  min-height: 223px;
 }
 
 .image {
@@ -199,7 +203,7 @@
 .carousel-enter.carousel-enter-active {
   opacity: 1;
   /* transform: translate(30px); */
-  transition: opacity 200ms linear;
+  transition: opacity 300ms linear;
   overflow-y: hidden;
 }
 
@@ -215,8 +219,31 @@
 
 .carousel-leave.carousel-leave-active {
   opacity: 0.01;
-  transform: translate(30px);
-  transition: transform 300ms linear;
+  transform: translate(300px);
+  transition: transform opacity 300ms linear;
 }
 
+.projectMedia-link:link {
+  color: inherit;
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+.projectMedia-link:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.projectMedia-link:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.projectMedia-link:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
 

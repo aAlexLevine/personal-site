@@ -11,9 +11,15 @@ const TitlePage = React.forwardRef((props, ref) => (
                 <div className="name">Alex Levine</div> 
                 <div className="subtitle">Software Engineer. Human Person.</div>
                 <div className="icons-container">
-                  <i className="fab fa-github icon-social"></i>
-                  <i className="fab fa-linkedin icon-social"></i>
-                  <i className="fab fa-twitter icon-social"></i>
+                  <a className="titlePage-link" href="https://github.com/aAlexLevine" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github icon-social"></i>
+                  </a>
+                  <a className="titlePage-link" href="https://linkedin.com/in/alex-levine-84179b152" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-linkedin icon-social"></i>
+                  </a>
+                  <a className="titlePage-link" href="https://twitter.com/aalexlevine" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-twitter icon-social"></i>
+                  </a>
                 </div>
               </div> 
               

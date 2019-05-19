@@ -82,3 +82,27 @@
     opacity: .4;
   }
 }
+
+.titlePage-link:link {
+  color: #3a3a3a;;
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+.titlePage-link:visited {
+  color: #3a3a3a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.titlePage-link:hover {
+  color: #3a3a3a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.titlePage-link:active {
+  color: #3a3a3a;
+  background-color: transparent;
+  text-decoration: underline;
+}

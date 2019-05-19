@@ -16,9 +16,9 @@ const ProjectsPage = React.forwardRef((props, ref) => (
       <div style={{height: '60px'}}></div>
     </Col>
 
-    <ProjectMedia images={data.liftLog.images} color={'orange'}/>
+    <ProjectMedia data={data.liftLog} color={'purple'}/>
     <Col xs={12} className="page-spacer"></Col>
-    <ProjectMedia images={data.liftLog.images} color={'blue'}/>
+    <ProjectMedia data={data.jaqen} color={'blue'}/>
     
   </Row>
 

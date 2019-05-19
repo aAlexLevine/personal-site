@@ -1,18 +1,31 @@
 const projects = {
   liftLog: {
     images: [
-      "/test gif.gif",
-      "/image-not-found.jpg",
-      "/placeholder-image.png",
-      "/chrome-mockup-png-2-transparent.png"
+      "/Lift Log Images/Lift Log Sign-in.gif",
+      "/Lift Log Images/Lift Log Table.gif",
+      "/Lift Log Images/Lift Log History Charts.gif",
+      "/Lift Log Images/Lift Log New plans.gif"
     ],
     title: "Lift Log",
-    description: ""
+    description: "Track all your workouts and monitor your progress with dynamic charts ",
+    stack: "Stack: ReactJS, ExpressJS, MySQL",
+    links: {
+      github: "https://github.com/aAlexLevine/Lift-Log-Dash",
+      site: ""
+    }
   },
   jaqen: {
-    images: [],
+    images: [
+      "/Jaqen Images/Jaqen Quiz.gif",
+      "/Jaqen Images/Jaqen Thumb2.gif"
+    ],
     title: 'Jaqen',
-    description: ""
+    description: "",
+    stack: "Stack: ReactJS, Redux, ExpressJS, Firebase, Postgres",
+    links: {
+      github: "https://github.com/The-North/classroom",
+      site: ""
+    }
   },
   volunTinder : {
     images: [],

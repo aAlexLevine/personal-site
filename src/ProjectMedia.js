@@ -27,7 +27,7 @@ class ProjectMedia extends React.Component {
 
   incrementImageIndex = () => {
     let index = this.state.selected + 1
-    if (index > this.props.images.length - 1) {
+    if (index > this.props.data.images.length - 1) {
       index = 0
     }
     this.setState({selected: index})
@@ -36,7 +36,7 @@ class ProjectMedia extends React.Component {
   decrementImageIndex = () => {
     let index = this.state.selected - 1
     if (index < 0) {
-      index = this.props.images.length - 1
+      index = this.props.data.images.length - 1
     }
     this.setState({selected: index})
   }
@@ -44,21 +44,28 @@ class ProjectMedia extends React.Component {
   render() {
     return (
       <Col xs={12}>    
-      <Container data-aos="zoom-in-up">
+      <Container data-aos="zoom-in-up media-container">
         <Row>
           <Col xs={12} md={2} >
             <div className={`project-sideBar ${this.props.color}-background`}>
               <Container className="project-sideBar-innerContainer">
                 <Row>
-                  <Col xs={6} md={12}>
+                  {this.props.data.links.site.length > 0
+                    ? <Col xs={6} md={12}>
+                        <div className="project-icon-container">
+                          <a  className="projectMedia-link" href={this.props.data.links.site} target="_blank" rel="noopener noreferrer">
+                            <i className="fas fa-desktop project-details-links" ></i>
+                          </a>
+                          <div className="project-icon-caption">site</div>
+                        </div>
+                      </Col>
+                    : null
+                  }
+                  <Col xs={this.props.data.links.site > 0 ? 6 : 12} md={12}>
                     <div className="project-icon-container">
-                      <i className="fas fa-desktop project-details-links" ></i>
-                      <div className="project-icon-caption">site</div>
-                    </div>
-                  </Col>
-                  <Col xs={6} md={12}>
-                    <div className="project-icon-container">
-                      <i className="fas fa-code project-details-links" ></i>
+                      <a  className="projectMedia-link" href={this.props.data.links.github} target="_blank" rel="noopener noreferrer">
+                        <i className="fas fa-code project-details-links" ></i>
+                      </a>
                       <div className="project-icon-caption">code</div>
                     </div>
                   </Col>
@@ -83,8 +90,8 @@ class ProjectMedia extends React.Component {
               <Image  
                   fluid  
                   className="image"
-                  key={this.props.images[this.state.selected]} 
-                  src={this.props.images[this.state.selected]}
+                  key={this.props.data.images[this.state.selected]} 
+                  src={this.props.data.images[this.state.selected]}
               /> 
             
             </CSSTransitionGroup>
@@ -99,7 +106,7 @@ class ProjectMedia extends React.Component {
           </Col>
           <Col xs={12} md={10}>
             <div className="thumbnail-container">
-                    {this.props.images.map((pic, i) => (
+                    {this.props.data.images.map((pic, i) => (
                       <div 
                         className={
                           `thumbnail 
@@ -118,12 +125,12 @@ class ProjectMedia extends React.Component {
       <Col xs={12} className="project-description-column">  
         <div className="project-description-container">
           <div className={`project-description-title ${this.props.color}-underline`}>
-            Lift Log
+            {this.props.data.title}
           </div>
           <div className="project-description-body">
-              Track all your workouts and monitor your progress with dynamic charts 
-              <br/>
-              Stack: ReactJS ExpressJS MySQL
+            {this.props.data.description}
+            <br/>
+            {this.props.data.stack}
           </div>
         </div>
       </Col>

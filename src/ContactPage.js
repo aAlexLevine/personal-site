@@ -52,7 +52,7 @@ class ContactPage extends React.Component {
                   </div>
                   <div className="clip-caption">- Click to copy! -</div>
                 </div>
-                <div className="email-note-container">
+                <div className="email-note-container" data-aos="zoom-out-up" data-aos-delay="400">
                 <div className="email-note">
                   Please feel free to reach out!
                 </div>
