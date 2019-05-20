@@ -2,10 +2,12 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aalexlevine.github.io/personal-site",
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
     "clipboard": "^2.0.4",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
@@ -15,6 +17,8 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
