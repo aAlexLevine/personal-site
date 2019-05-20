@@ -156,6 +156,14 @@
   border-bottom: 1px solid #f96855; /* This creates the border. Replace black with whatever color you want. */
 }
 
+.project-description-stack {
+  margin-top: 10px;
+}
+
+.stack-bold {
+  font-weight: bold;
+}
+
 .orange-background {
   background: #f96855;
 }
@@ -245,5 +253,20 @@
   color: white;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.slick-prev {
+  left: 5px !important;
+  z-index: 3 !important;
+}
+
+.slick-next {
+  right: 5px !important;
+  z-index: 3 !important;
+}
+
+ .slick-prev:before, .slick-next:before  {
+  color: #3a3a3a !important;
+  font-size: 25px !important;
 }
 

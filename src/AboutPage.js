@@ -67,7 +67,7 @@ const AboutPage = React.forwardRef((props, ref) => (
           <Col  md={6} xs={12} data-aos="fade-right" data-aos-delay="300">
             <div className="paper-container">
               <p className="paper-text">
-                I operate mostly inside JavaScript land  
+                I develop mostly inside the JavaScript ecosystem
                 working across Node, React, Express 
                 and SQL/NoSQL technologies, but I'm always excited to try out new tech.
               </p>

@@ -3,8 +3,22 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-// import Slider from 'react-slick';
-import { CSSTransitionGroup } from 'react-transition-group';
+// import { CSSTransitionGroup } from 'react-transition-group';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
+
+// const CustomArrow = (props) => {
+//   const { className, style, onClick } = props
+//   return (
+//     <div 
+//       className={className}
+//       style={{...style}}
+//       onClick={onClick}
+//     >
+//     </div>
+//   )
+// }
 
 
 class ProjectMedia extends React.Component {
@@ -42,9 +56,17 @@ class ProjectMedia extends React.Component {
   }
 
   render() {
+    const sliderSettings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // nextArrow: <CustomArrow />
+    }
     return (
       <Col xs={12}>    
-      <Container data-aos="zoom-in-up media-container">
+      <Container data-aos="zoom-in-up media-container" data-aos-delay="200" data-aos-duration='200'>
         <Row>
           <Col xs={12} md={2} >
             <div className={`project-sideBar ${this.props.color}-background`}>
@@ -75,15 +97,25 @@ class ProjectMedia extends React.Component {
           </Col>
 
           <Col xs={12} md={10} >
-          <div className="leftArrowContainer" onClick={this.decrementImageIndex}>
+          {/* <div className="leftArrowContainer" onClick={this.decrementImageIndex}>
             <i className={`fas fa-chevron-left leftArrow ${this.props.color}-color`}></i>
           </div>
           <div className="rightArrowContainer" onClick={this.incrementImageIndex}>
               <i className={`fas fa-chevron-right rightArrow ${this.props.color}-color`}></i>
-            </div>
+            </div> */}
             <div className="image-container">
-              
-            <CSSTransitionGroup
+              <Slider {...sliderSettings}> 
+                {this.props.data.images.map(img => (
+                  <Image 
+                    fluid
+                    className="image"
+                    key={img}
+                    src={img}
+                  />
+                ))}
+              </Slider>
+
+            {/* <CSSTransitionGroup
               transitionName="carousel"
               transitionEnterTimeout={300}
               transitionLeaveTimeout={300}>
@@ -94,16 +126,22 @@ class ProjectMedia extends React.Component {
                   src={this.props.data.images[this.state.selected]}
               /> 
             
-            </CSSTransitionGroup>
+            </CSSTransitionGroup> */}
         
             </div>
           </Col>
         </Row>
 
         <Row>
-          <Col xs={0} md={2}>
-            <div>{/* This creates an offset in order center the thumbnail dots */}</div>
+          <Col>
+            <div className="thumbnail-spacer"></div>
           </Col>
+        </Row>
+
+        {/* <Row>
+          <Col xs={0} md={2}> */}
+            {/* <div>This creates an offset in order center the thumbnail dots</div> */}
+          {/* </Col>
           <Col xs={12} md={10}>
             <div className="thumbnail-container">
                     {this.props.data.images.map((pic, i) => (
@@ -119,7 +157,7 @@ class ProjectMedia extends React.Component {
                     ))}
               </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
 
       <Col xs={12} className="project-description-column">  
@@ -130,7 +168,10 @@ class ProjectMedia extends React.Component {
           <div className="project-description-body">
             {this.props.data.description}
             <br/>
-            {this.props.data.stack}
+            <div className="project-description-stack">
+              <span className="stack-bold">Stack: </span> 
+              {this.props.data.stack}
+            </div>
           </div>
         </div>
       </Col>
