@@ -28,13 +28,13 @@
 
 .image-container {
   max-height: 453px;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 2.75s ease;
   min-height: 223px;
 }
 
 .image {
-  overflow: hidden;
+  /* overflow: hidden; */
   max-height: 453px;
   /* transition: max-height 3.75s ease; */
 }
@@ -101,6 +101,10 @@
 
 .rightArrowContainer:hover{
   background: #9494941a;
+}
+
+.thumbnail-spacer {
+  height: 24px;
 }
 
 .thumbnail-container {

@@ -50,7 +50,7 @@
 
 .customArrow-container {
   position: absolute;
-  height: 30px;
+  height: 85px;
   width: 30px;
   left: 50%;
   animation: fadeIn 1s linear infinite ;

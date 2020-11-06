@@ -1,13 +1,13 @@
-import liftLogSignInGif from './Images/Lift Log Images/Lift Log Sign-In.gif';
-import liftLogtTableGif from './Images/Lift Log Images/Lift Log Table.gif';
-import liftLogHistoryChartsGif from './Images/Lift Log Images/Lift Log History Charts.gif';
-import liftLogNewPlansGif from './Images/Lift Log Images/Lift Log New plans.gif';
-import jaqenQuizGif from './Images/Jaqen Images/Jaqen Quiz.gif';
-import jaqenThumbsGif from './Images/Jaqen Images/Jaqen Thumb2.gif';
-import volunTinderAddRemoveGif from './Images/VolunTinder/VolunTinder AddDelete2 Standard.gif';
-import volunTinderCreateNew from './Images/VolunTinder/VolunTinder CreateNew.gif';
-import gifStashSearchAddGif from './Images/Gif Stash/Gif Stash Search Standard Size.gif';
-import gifStashFilterGif from './Images/Gif Stash/Gif Stash Filter.gif';
+import liftLogSignInGif from './Images/Lift Log Images/Lift Log Sign In Standard Compressed.gif';
+import liftLogtTableGif from "./Images/Lift Log Images/Lift Log Table Standard Compressed.gif";
+import liftLogHistoryChartsGif from "./Images/Lift Log Images/Lift Log History Charts Standard Compressed.gif";
+import liftLogNewPlansGif from "./Images/Lift Log Images/Lift Log New Plans Standard Compressed.gif";
+import jaqenQuizGif from "./Images/Jaqen Images/Jaqen Quiz Standard Compressed.gif";
+import jaqenThumbsGif from './Images/Jaqen Images/Jaqen Thumb Standard Compressed.gif';
+import volunTinderAddRemoveGif from "./Images/VolunTinder/VolunTinder Add Delete Standard Compressed.gif";
+import volunTinderCreateNew from "./Images/VolunTinder/VolunTinder CreateNew Standard Compressed.gif";
+import gifStashSearchAddGif from './Images/Gif Stash/Gif Stash Search Standard Compressed.gif';
+import gifStashFilterGif from './Images/Gif Stash/Gif Stash Filter Standard Compressed.gif';
 
 const projects = {
   liftLog: {
